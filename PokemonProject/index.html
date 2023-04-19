@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dario Jauregui</title>
+    <script src="src/App.js" defer></script>
+  </head>
+  <body>
+    <section class="section-main">
+      <div class="side-nav">
+        <ul class="menu">
+          <li class="list-item">
+            <a class="side-nav-link active" href="#" id="pokemon-link">
+              <ion-icon
+                class="menu-icon pokeball-icon"
+                name="invert-mode-outline"
+              ></ion-icon>
+              <span class="nav-text">Pokemons</span>
+            </a>
+          </li>
+          <li class="list-item">
+            <a class="side-nav-link" href="#" id="abilities-link"
+              ><ion-icon class="menu-icon bolt" name="flash-outline"></ion-icon>
+              <span class="nav-text">Abilities</span>
+            </a>
+          </li>
+          <li class="list-item">
+            <a class="side-nav-link" href="items.html" id="items-link"
+              ><ion-icon
+                class="menu-icon it"
+                name="pricetag-outline"
+              ></ion-icon>
+              <span class="nav-text">Items</span>
+            </a>
+          </li>
+          <li class="list-item">
+            <a class="side-nav-link" href="berries.html" id="berries-link"
+              ><ion-icon
+                class="menu-icon berry"
+                name="nutrition-outline"
+              ></ion-icon>
+              <span class="nav-text">Berries</span>
+            </a>
+          </li>
+          <li class="list-item">
+            <a class="side-nav-link" href="locations.html" id="locations-link">
+              <ion-icon class="menu-icon loc" name="compass-outline"></ion-icon>
+              <span class="nav-text">Locations</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="table-container">
+        <table>
+          <tbody data-loading></tbody>
+        </table>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

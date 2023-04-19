@@ -1,0 +1,283 @@
+/* Google Fonts- Raleway */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+  . FONT SIZES (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+  . FONT WEIGHTS: 
+    400, 500, 600
+
+  . LINE HEIGHTS:
+    Default: 1
+
+--- 02 COLORS
+
+  . Pokemon rgb(254, 7, 7)
+  . Abilities rgb(248, 149, 0)
+  . Items rgb(157, 0, 248)
+  . Berries rgb(0, 91, 248)
+  . Locations rgb(0, 248, 0)
+
+
+  . Tints: 
+    . Pokemon rgb(240, 60, 60) #f1999949
+    . Abilities rgb(245, 153, 24) rgb(240, 204, 151)
+    . Items rgba(211, 224, 244, 0.637)
+    . Berries rgba(239, 225, 248, 0.637)
+    . Locations rgba(196, 222, 193, 0.637)
+
+--- 03 SHADOWS
+    . 0 0 1rem rgba(0, 0, 0, 0.1);
+    . 0 1px 9px 1px rgba(0, 0, 0, 0.28);
+
+  . SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #222;
+  background: #c7c3c330;
+}
+
+.section-main {
+  display: grid;
+  grid-template-columns: 27.5rem 1fr;
+  grid-gap: 2rem;
+}
+
+.item {
+  width: 100%;
+  height: 100px;
+  padding: 1.6rem;
+  border: 3px solid #333;
+  background-color: #dfdfdf;
+}
+
+.side-nav {
+  width: 27.5rem;
+  height: 100vh;
+  position: sticky;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  padding: 1.6rem;
+  background: #fefefedc;
+  backdrop-filter: blur(0.5rem);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  justify-self: stretch;
+}
+
+.pokeball-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.8rem;
+  width: 3rem;
+  height: 3rem;
+  rotate: -90deg;
+}
+
+.side-nav-link.active .menu-icon {
+  width: 5rem;
+  height: 5rem;
+  transition: 0.2s;
+}
+
+.side-nav-link.active .pokeball-icon {
+  color: rgb(254, 7, 7);
+}
+
+.side-nav-link.active .bolt {
+  color: rgb(248, 149, 0);
+}
+
+.side-nav-link.active .it {
+  color: rgb(157, 0, 248);
+}
+
+.side-nav-link.active .berry {
+  color: rgb(0, 91, 248);
+}
+
+.side-nav-link.active .loc {
+  color: rgb(0, 248, 0);
+}
+
+.menu-icon {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.8rem;
+}
+
+.menu {
+  list-style: none;
+  padding: 0 1.5rem;
+}
+
+/* Change color in JavaScript*/
+.list-item:hover a,
+.list-item:active a {
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.list-item:hover .pokeball-icon {
+  color: rgb(254, 7, 7);
+  transition: all 0.2s;
+}
+
+.list-item:hover .bolt {
+  color: rgb(248, 149, 0);
+  transition: all 0.2s;
+}
+
+.list-item:hover .it {
+  color: rgb(157, 0, 248);
+  transition: all 0.2s;
+}
+
+.list-item:hover .berry {
+  color: rgb(0, 91, 248);
+  transition: all 0.2s;
+}
+
+.list-item:hover .loc {
+  color: rgb(0, 248, 0);
+  transition: all 0.2s;
+}
+
+.list-item:hover,
+.list-item:active a {
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.list-item {
+  margin: 8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  gap: 1.4rem;
+}
+
+.side-nav-link:link,
+.side-nav-link:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #222;
+  font-weight: 400;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  width: 100%;
+  border-collapse: separate;
+  overflow: hidden;
+  margin-top: 1.6rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  margin-top: 0rem;
+  border-spacing: 0 1.5rem;
+}
+
+table th {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: center;
+}
+
+table td {
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.215);
+}
+
+table tr {
+  box-shadow: 0 1px 9px 1px rgba(0, 0, 0, 0.28);
+}
+
+.side-nav-link.active {
+  font-weight: 600;
+}
+
+.side-nav-link.active:hover {
+  font-weight: 600;
+}
+
+.pokemon-table th {
+  background: rgb(240, 60, 60);
+  color: white;
+}
+
+.pokemon-table tr:nth-child(even) {
+  background-color: #f1999949;
+}
+
+.abilities-table th {
+  background: rgb(245, 153, 24);
+  color: white;
+}
+
+.abilities-table tr:nth-child(even) {
+  background-color: rgb(240, 204, 151);
+}
+
+.berries-table th {
+  background: rgb(0, 91, 248);
+  color: white;
+}
+
+.berries-table tr:nth-child(even) {
+  background-color: rgba(211, 224, 244, 0.637);
+}
+
+.items-table th {
+  background: rgb(157, 0, 248);
+  color: white;
+}
+
+.items-table tr:nth-child(even) {
+  background-color: rgba(239, 225, 248, 0.637);
+}
+
+.locations-table th {
+  background: rgb(38, 161, 38);
+  color: white;
+}
+
+.locations-table tr:nth-child(even) {
+  background-color: rgba(196, 222, 193, 0.637);
+}
